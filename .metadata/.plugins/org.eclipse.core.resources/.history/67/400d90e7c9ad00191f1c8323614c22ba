@@ -1,0 +1,92 @@
+package stepDefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class BankLoginDef 
+{
+	@Given("Srinivas has done with browser configuration")
+	public void srinivas_has_done_with_browser_configuration() {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+		System.out.println("background broser configuration");
+	}
+
+	@Then("He launches the application in the chrome browser")
+	public void he_launches_the_application_in_the_chrome_browser() {
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+		System.out.println("background launch application");
+	}
+
+	@Given("He clicks on signin link")
+	public void he_clicks_on_signin_link() {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+		System.out.println("click on signin link");
+	}
+
+	@Then("He enters the valid credentials")
+	public void he_enters_the_valid_credentials() {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+		System.out.println("enters the valid credentials");
+	}
+
+	@Then("He clicks on submit button")
+	public void he_clicks_on_submit_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+		System.out.println("He clicks on submit button");
+	}
+
+	@Given("Guest user clicks on signup link")
+	public void guest_user_clicks_on_signup_link() {
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+		System.out.println("Guest user clicks on signup link");
+	}
+
+	@When("He provides mandatory data")
+	public void he_provides_mandatory_data() {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+		System.out.println("He provides mandatory data");
+	}
+
+	@Then("He clicks on submit button and id is generated")
+	public void he_clicks_on_submit_button_and_id_is_generated() {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+		System.out.println("clicks on submit button and id is generated");
+	}
+
+	@Given("He clicks on forget password link")
+	public void he_clicks_on_forget_password_link() {
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+		System.out.println("clicks on forget password link");
+	}
+
+	@Then("He enters the mobile number")
+	public void he_enters_the_mobile_number() {
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+		System.out.println("enters the mobile number");
+	}
+
+	@Then("He provides the otp")
+	public void he_provides_the_otp() {
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+		System.out.println("provides the otp");
+	}
+
+	@Then("he is able to reset the password")
+	public void he_is_able_to_reset_the_password() {
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+		System.out.println("reset the password");
+	}
+}

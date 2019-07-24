@@ -1,0 +1,17 @@
+<?DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" ?>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="false">
+  <test name="Test">
+  <parameter trainer = "srinivas" ></parameter>
+  <parameter location = "HYD" ></parameter>
+    <classes>
+    <groups>
+    <run> 
+    <include name = "myown" ></include>
+    </run>
+    </groups>
+     <class name="mydemomdc7.grpngdemo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

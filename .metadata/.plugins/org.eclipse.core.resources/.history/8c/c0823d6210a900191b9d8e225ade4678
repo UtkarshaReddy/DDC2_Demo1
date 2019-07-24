@@ -1,0 +1,69 @@
+package pack1;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterSuite;
+
+public class MyTC_05 
+{
+  @Test(dataProvider = "dp")
+  public void registration(String n, String s) 
+  {
+	  System.out.println("registration");
+	  System.out.println("uname:" +n);
+	  System.out.println("pswd:", +s);
+  }
+  //@BeforeMethod
+  //public void beforeMethod() 
+  //{
+	  
+  //}
+
+ // @AfterMethod
+ // public void afterMethod() 
+  //{
+	  
+  //}
+
+
+  @DataProvider
+  public Object[][] dp() 
+  {
+    return new Object[][] 
+    {
+      new Object[] { "utkarsha1", "1234" },
+      new Object[] { "utkarsha2", "1235" },
+      new Object[] { "utkarsha3", "1236" },
+      new Object[] { "utkarsha4", "1237" },
+    };
+  }
+ // @BeforeClass
+ // public void beforeClass() 
+ // {
+	  
+ // }
+
+ // @AfterClass
+ // public void afterClass() 
+ // {
+	  
+ // }
+
+ // @BeforeSuite
+//  public void beforeSuite() 
+ // {
+	  
+ // }
+
+ // @AfterSuite
+ // public void afterSuite() 
+ // {
+	  
+ // }
+
+}

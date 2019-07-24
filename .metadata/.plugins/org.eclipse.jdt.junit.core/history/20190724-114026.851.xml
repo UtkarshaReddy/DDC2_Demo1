@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="cucumjuly2219" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="batchRunner.TestRunner" time="47.195">
+    <testsuite name="Feature: Customer registration" time="47.195">
+      <testcase name="customer signup" classname="Customer registration" time="47.195"/>
+    </testsuite>
+  </testsuite>
+</testrun>

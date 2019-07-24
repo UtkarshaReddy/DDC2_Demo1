@@ -1,0 +1,54 @@
+package stepDefinitions;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+
+public class TestMeLogin 
+{
+	@Given("I am launching the testme application in firefox")
+	public void i_am_launching_the_testme_application_in_firefox() 
+	{
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+		WebDriver driver;
+		System.setProperty("webdriver.gecko.driver","C:\\Drivers\\geckodriver-v0.24.0-win32\\geckodriver.exe");
+		driver =  new FirefoxDriver();
+		driver.get("http://10.232.237.143:443/TestMeApp");
+		driver.manage().window().maximize();
+		
+	}
+
+	@Given("I click on SignIn link")
+	public void i_click_on_SignIn_link() 
+	{
+	    // Write code here that turns the phrase above into concrete actions
+	  //  throw new cucumber.api.PendingException();
+		WebDriverWait wait = new  WebDriverWait(driver,60);
+		
+	}
+
+	@Then("I provide username {string}")
+	public void i_provide_username(String string) 
+	{
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+	}
+
+	@Then("I provide password {string}")
+	public void i_provide_password(String string) 
+	{
+	    // Write code here that turns the phrase above into concrete actions
+	  //  throw new cucumber.api.PendingException();
+	}
+
+	@Then("I click on login and verify the login status")
+	public void i_click_on_login_and_verify_the_login_status() 
+	{
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+	}
+}

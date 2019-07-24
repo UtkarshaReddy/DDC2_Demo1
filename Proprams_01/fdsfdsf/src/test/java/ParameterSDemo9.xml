@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+  <parameter name="location" value="HYD"/>
+  <parameter name="DCNO" value="HDC4"/>
+    <classes>
+      <class name="demo0408.ParameterSDemo9"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

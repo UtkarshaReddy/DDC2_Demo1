@@ -1,0 +1,6 @@
+
+Feature: My standard chartered bank account
+Scenario: Sign In for the registered user
+    Given He clicks on sign in link
+    Then He enters the valid credentials
+    And He clicks on submit button

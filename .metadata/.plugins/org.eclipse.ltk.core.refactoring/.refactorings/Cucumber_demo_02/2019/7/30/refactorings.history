@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Cucumber_demo_02/MyFeatures/Demo123.feature&apos; to &apos;Demo456123.feature&apos;" description="Rename resource &apos;Demo123.feature&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="MyFeatures/Demo123.feature" name="Demo456123.feature" stamp="1563878933190" updateReferences="true"/>
+</session>

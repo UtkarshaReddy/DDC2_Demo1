@@ -1,0 +1,9 @@
+package ddc2July_19;
+
+import org.testng.annotations.Test;
+
+public class ExtentReport_Demo_01 {
+  @Test
+  public void f() {
+  }
+}

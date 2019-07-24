@@ -1,0 +1,9 @@
+package HandsOn.HandsOn;
+
+import org.testng.annotations.Test;
+
+public class ExtentReportDemo_01 {
+  @Test
+  public void f() {
+  }
+}

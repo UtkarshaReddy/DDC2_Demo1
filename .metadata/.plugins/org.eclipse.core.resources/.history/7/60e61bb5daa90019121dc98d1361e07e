@@ -1,0 +1,36 @@
+package pack1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class MyTC_11 
+{
+  @Test
+  public void f() throws InterruptedException
+  {
+	  WebDriver driver;
+	  System.setProperty("webdriver.gecko.driver","C:\\Drivers\\geckodriver-v0.24.0-win32\\geckodriver.exe");
+	  driver = new FirefoxDriver();
+//	  driver.get("https://www.spicejet.com");
+	  driver.get("https:demos.telerik.com/aspnet-ajax/treeview/examples/overview/defaultcs.aspx");
+	  driver.manage().window().maximize();
+	  
+//	  WebElement E1 = driver.findElement(By.xpath("//a[text()='Add-Ons']"));
+//	  Actions act1 = new Actions(driver);
+//	  act1.moveToElement(E1).build().perform();
+	  
+//	  WebElement E2 = driver.findElement(By.xpath("//span[text()='Check-In']"));
+//	  Actions act2 = new Actions(driver);
+//	  act2.contextClick(E2).build().perform();
+  
+//	  WebElement E3 = driver.findElement(By.xpath("//span[text()='Check-In']"));
+//	  Actions act3 = new Actions(driver);
+//	  act2.doubleClick(E3).build().perform();
+	    
+	  Thread.sleep(10000);
+  }
+}

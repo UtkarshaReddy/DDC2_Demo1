@@ -1,0 +1,28 @@
+package pack1;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
+
+public class MyTC_07 
+{
+  @Test
+  public void sbi()
+  {
+	WebDriver driver; 
+	System.setProperty("webdriver.gecko.driver","C:\\Drivers\\geckodriver-v0.24.0-win32\\geckodriver.exe");
+	driver = new FirefoxDriver();
+	driver.get("http://10.232.237.143:443/TestMeApp");
+	driver.manage().window().maximize();
+	
+	  
+  }
+  
+ 
+
+}

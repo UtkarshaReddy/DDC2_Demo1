@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestSuite01" parallel="false">
+  <test name="TC001">
+    <classes>
+      <class name="pack1.HandsOn_04"/>
+      <methods>
+      <method name=""
+      </methods>
+    </classes>
+  </test> <!-- Test -->
+  <test name="TC002">
+    <classes>
+      <class name="pack1.HandsOn_05"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,29 @@
+package pack1;
+
+import org.openqa.selenium.WebDriver;
+
+public class My_Drivers 
+{
+    //the return type is webdriver based on string input
+	public static WebDriver getDriver(String browser) 
+	{
+		// TODO Auto-generated method stub
+		if(browser.equals("chrome"))
+		{
+			System.setProperty("webdriver.chrome.driver","");
+			return new ChromeDriver();
+		}
+		else if (browser.equals("ie"))
+		{
+			System.setProperty("webdriver.ie.driver","");
+			return new InternetExplorerDriver();
+		}
+		else if (browser.equals("ff"))
+		{
+			System.setProperty("webdriver.gecko.driver","");
+			return new FireFoxDriver();
+		}
+
+	}
+
+}

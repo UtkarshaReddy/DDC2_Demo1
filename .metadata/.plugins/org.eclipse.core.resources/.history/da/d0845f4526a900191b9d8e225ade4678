@@ -1,0 +1,55 @@
+package pack1;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
+
+public class MyTC_07 
+{
+  @Test(dataProvider = "dp")
+  public void f(Integer n, String s) 
+  {
+	WebDriver driver; 
+	System.setProperty("webdriver.gecko.driver","C:\\Drivers\\geckodriver-v0.24.0-win32\\geckodriver.exe");
+	driver = new FirefoxDriver();
+	driver.get("http://10.232.237.143:443/TestMeApp");
+	driver.manage().window().maximize();
+	  
+  }
+  
+  
+  
+  @BeforeMethod
+  public void beforeMethod() 
+  {
+	  
+  }
+
+  @AfterMethod
+  public void afterMethod()
+  {
+	  
+  }
+
+
+  @DataProvider
+  public Object[][] dp() {
+    return new Object[][] {
+      new Object[] { 1, "a" },
+      new Object[] { 2, "b" },
+    };
+  }
+  @BeforeClass
+  public void beforeClass() {
+  }
+
+  @AfterClass
+  public void afterClass() {
+  }
+
+}

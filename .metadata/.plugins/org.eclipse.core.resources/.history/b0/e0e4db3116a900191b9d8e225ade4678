@@ -1,0 +1,73 @@
+package pack1;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterSuite;
+
+public class MyTC_05 
+{
+	WebDriver driver; 
+  @BeforeClass
+  public void launch()
+  {
+	driver = new FirefoxDriver();
+	System.setProperty("webdriver.gecko.driver","C:\\Drivers\\geckodriver-v0.24.0-win32\\geckodriver.exe");
+	driver = new FirefoxDriver();
+	driver.get("http://10.232.237.143:443/TestMeApp");
+	driver.manage().window().maximize();
+	//Thread.sleep(5000);
+  }
+	
+  @Test(dataProvider = "dp")
+  public void login(String n, String s) throws InterruptedException
+  {
+	WebDriverWait wait = new WebDriverWait(driver,60);
+	wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("SignIn")));
+	driver.findElement(By.xpath("//a[contains (text( ),'SignIn')]")).click();
+	Thread.sleep(5000);
+	driver.findElement(By.xpath("//input[@name='userName']")).sendKeys(n);
+	driver.findElement(By.xpath("//input[@name='password']")).sendKeys(s);
+	driver.findElement(By.xpath("//input[@name='Login']")).click();
+	Thread.sleep(5000);
+	String expected_title = "Home";
+	String actual_title = driver.getTitle();
+	if(expected_title == actual_title)
+	{
+		System.out.println("login is successful");
+	}
+	else
+	{
+		System.out.println("login is not successful");
+	}
+  }
+  
+  @DataProvider
+  public Object[][] dp() 
+  {
+    return new Object[][] 
+    {
+      new Object[] { "mbczkhfs", "mnbvcxz" },
+      new Object[] { "poiuytrewq", "qwertyuiop" },
+      //new Object[] { "", "" },
+      //new Object[] { "", "" },
+    };
+  }
+    
+  @AfterMethod
+  public void logout() throws InterruptedException
+  {
+    driver.findElement(By.xpath("//a[contains (text( ),'SignOut')]")).click();
+	Thread.sleep(5000);
+	driver.close();
+  }
+}

@@ -1,0 +1,14 @@
+package pack1;
+
+import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+
+public class Driver_import 
+{
+  @Test
+  public void f() 
+  {   
+	  driver=My_Drivers.getDriver("ff");
+	  driver.get("https://www.google.com");
+  }
+}

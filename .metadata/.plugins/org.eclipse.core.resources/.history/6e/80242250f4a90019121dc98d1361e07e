@@ -1,0 +1,19 @@
+package pack1;
+
+import org.openqa.selenium.WebDriver;
+
+public class My_Drivers 
+{
+
+	public static WebDriver getDriver(String browser) 
+	{
+		// TODO Auto-generated method stub
+		if(browser.equals("chrome"))
+		{
+			System.setProperty("webdriver.chrome.driver","");
+			return new ChromeDriver();
+		}
+
+	}
+
+}

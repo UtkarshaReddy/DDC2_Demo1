@@ -1,0 +1,22 @@
+package pack1;
+
+import org.testng.annotations.Test;
+
+public class HandsOn_02 
+{
+  @Test
+  public void testGoogle() 
+  {
+	  
+  }
+  @Test
+  public void testFacebook() 
+  {
+	  
+  }
+  @Test
+  public void testTwitter() 
+  {
+	  
+  }
+}

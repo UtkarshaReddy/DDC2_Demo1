@@ -1,0 +1,7 @@
+Feature:  My validation on American Express
+
+Scenario: I want to login
+
+Given I have an account
+And I will provide the data
+Then My login is scuccess

@@ -1,0 +1,12 @@
+package pack1;
+
+import org.testng.annotations.Test;
+
+public class MyTC_05 
+{
+  @Test
+  public void f() 
+  {
+	  
+  }
+}
